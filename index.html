@@ -6,6 +6,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="images/t-favicon.png">
 
     <!-- <link rel="stylesheet" href="css/style.css"> -->
@@ -19,8 +20,9 @@
             <nav class="flex jc-sb">
                 <h1 class="logo">Tim WD</h1>
                 <ul>
-                    <a href="#home">Home</a>
-                    <a href="#myworks">My Works</a>
+                    <a class="hide" href="#home">Home</a>
+                    <a href="#myworks">My Projects</a>
+                    <a href="#sociallinks">About</a>
                     <a href="#sociallinks">Social Links</a>
                     <a href="#contact">Contact</a>
                 </ul>
@@ -43,9 +45,13 @@
                     </div>
                     <div class="expertise">
                         <h2>Expertise:</h2>
-                        <p>Python, Django, Django REST framework, Postgres, AWS (RDS/S3), Heroku, HTML/CSS.</p>
+                        <p>
+                            Python, Django, Django REST framework, <br>
+                            Postgres, AWS (RDS/S3), Heroku, <br>
+                            Vanilla JavaScript, HTML/CSS/SASS.
+                        </p>
                     </div>
-                    <a href="#myworks" class="btn-center"><button class="button">View My Work</button></a>
+                    <a href="#myworks" class="btn-center"><button class="button">View My Projects</button></a>
                 </div>         
             </div>
 
@@ -94,7 +100,7 @@
                         <p>
                             A website for a local hair salon nearby me. <br>
                             • increased sales by 8%.<br>
-                            • visitors can easy view services in one place.<br>
+                            • visitors can easily view services in one place.<br>
                             • owners can manage product's data.<br>
                             • visitors no longer need to use a social media group.
                         </p>
@@ -116,8 +122,8 @@
                             Here people also can leave their own Thank You letters to whomever they would like.
                         </p>
                         <p style="font-family: Roboto;">
-                            Django, Django REST framework,
-                            <br> Postgres, S3 bucket, Heroku.
+                            Django, Django REST framework, Postgres,
+                            <br> S3 bucket, Heroku, HTML, SASS.
                         </p>
                         <a href="igclone.html"><button>Go To Project</button></a>
                     </div>
@@ -132,8 +138,8 @@
                             follow and view profiles; upload, update and delete images. Here people can interact with their and their friends' content as they would do on typical social media.
                         </p>
                         <p style="font-family: Roboto;">
-                            Django, Django REST framework,
-                            <br> Postgres, AWS(RDS/S3), Heroku.
+                            Django, Django REST framework, Postgres,
+                            <br>  AWS(RDS/S3), Heroku, HTML, CSS.
                         </p>
                         <a href="igclone.html"><button>Go To Project</button></a>
                         </div>
@@ -143,6 +149,64 @@
         </div>
     </section>
     <!-- End of My Projects Section -->
+
+
+    <!-- Social Links Section -->
+    <section id="sociallinks" class="social">
+        <div class="container flex fd-col">
+            <h1>About</h1>
+
+            <div class="showoff flex fd-row flex-wrap">
+                <img src="images/portfoliophoto1.png" alt="meshowoffing">
+                <p>I don't want to brag or show off here, so let my <br class="hide"> projects speak for me.</p>
+            </div>
+            <div class="social-links flex">
+                <a href="https://www.linkedin.com/in/timirlan-gubaidullin-8a58a3210/" target="_blank"><i id="linkedin-color" class="fab fa-linkedin-in fa-5x"></i></a> 
+                <a href="https://github.com/HeyIam-Tim?tab=repositories" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+                <a href="https://twitter.com/Timirlan94?s=09" target="_blank"><i id="twitter-color" class="fab fa-twitter fa-5x"></i></a>
+                <a href="https://t.me/Tim_WD" target="_blank"><i id="telegram-color" class="fab fa-telegram-plane fa-5x"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End of Social Links Section -->
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact">
+        <div class="container flex fd-col">
+            <h1>Contact Me</h1>
+            <div class="card">
+                <form action="https://formsubmit.co/timgerm280@gmail.com" method="POST" class="flex fd-col">
+
+                    <div class="form-group  flex fd-col ai-fs">
+                        <label for="name">Name </label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="form-group flex fd-col ai-fs">
+                        <label for="email">Email </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="form-group flex fd-col ai-fs">
+                        <label for="subject">Subject </label>
+                        <input type="text" name="subject" id="subject" required>
+                    </div>
+
+
+                    <div class="form-group flex fd-col ai-fs">
+                        <label for="message">Message </label>
+                        <textarea name="message" id="message" cols="38" rows="8" required></textarea>
+                    </div>
+
+
+                    <button type="submit">Submit</button>
+               </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End of Contact Me Section -->
 
 
 </body>
